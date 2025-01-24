@@ -1,0 +1,46 @@
+{
+  "name": "cemboo-frontend-development-task",
+  "description": "This project is a single-page streaming application built using `Next.js` and `TypeScript`, inspired by popular platforms like Netflix, Viki, and Hotstar. The app features a clean and interactive design, with a focus on responsive layouts and smooth user experience.",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "Next.js",
+    "React.js Framework",
+    "TypeScript",
+    "Streaming Video App",
+    "Mock Data",
+    "Fronend Task"
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "bootstrap": "^5.3.3",
+    "next": "15.1.6",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.8",
+    "react-dom": "^19.0.0",
+    "react-player": "^2.16.0",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1",
+    "slick-slider": "^1.8.2"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-slick": "^0.23.13",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "typescript": "^5"
+  }
+}

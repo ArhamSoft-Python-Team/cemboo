@@ -1,0 +1,76 @@
+/*navbar*/
+.header .navbar {background-color: rgba(0, 0, 0, 0.39);color: #fff;position: absolute;top: 0px;z-index: 2;width: 100%;border-top: 4px solid #0E6EFD;}
+.header .navbar .navbar-brand {color: #fff;font-size: 40px;line-height: 50px;margin-right: 100px;font-family: var(--font-unbounded), sans-serif;font-weight: 900;}
+.header .navbar .navbar-brand .blue {color: #5096FF;}
+.header .navbar .navbar-brand .yellow {color: #FFC503;}
+.header .navbar .navbar-brand:focus, .header .navbar .navbar-brand:hover {color: #fff;}
+.header .navbar .navbar-collapse {justify-content: end;}
+.header .navbar .navbar-nav {margin-right: 5px;}
+.header .navbar .nav-link {color: #fff;font-size: 20px;line-height: 24px;}
+.header .navbar .nav-link:not(:last-of-type) {margin-right: 20px;}
+.header .navbar .nav-link:hover, .header .navbar .nav-link:focus{color: #5096FF;}
+.header .navbar .login-buttons ul {padding: 0;margin: 0;list-style: none;display: flex;align-items: center;}
+.header .navbar .login-buttons ul li:not(:last-of-type) {margin-right: 22px;}
+.header .navbar .navbar-toggler-icon {background-image: url("https://res.cloudinary.com/arhamsoft-ltd/image/upload/v1737447449/assessment-frontend/bars_ohxtrb.svg");}
+.header .navbar .navbar-toggler {padding: 0;border: none;}
+.header .navbar .navbar-toggler:focus {box-shadow: none;outline: 0;}
+.header .navbar .navbar-nav .nav-link.active, .header .navbar .navbar-nav .nav-link.show {color: #5096FF;}
+.header .navbar .round {border-radius: 50%;width: 50px;height: 50px;font-size: 23px;}
+.header .navbar .login-buttons .white-button .text{display: block;}
+.header .navbar .login-buttons .white-button .image{display: none;}
+.header .search-icon {display: none;}
+.header .navbar-collapse .nav-link {display: inline-flex;align-items: center;}
+.header .navbar-collapse .nav-link .image {margin-right: 15px;display: none;}
+.header .navbar-collapse .nav-link .image .white-icon {display: block;}
+.header .navbar-collapse .nav-link .image .blue-icon {display: none;}
+.header .navbar-collapse .nav-link:hover .image .white-icon, .header .navbar .nav-link:focus .image .white-icon {display: none;}
+.header .navbar-collapse .nav-link:hover .image .blue-icon, .header .navbar .nav-link:focus .image .blue-icon {display: block;}
+.header .navbar-collapse .nav-link.mobile-links,
+.header .navbar .navbar-brand.nav-collapse-logo,
+.header .navbar-collapse .close-button {display: none;}
+/* responsive */
+@media only screen and (max-width:1399px){
+    .header .navbar .navbar-brand {font-size: 35px;line-height: 45px;}
+}
+@media only screen and (max-width:991px){
+    .header .navbar .collapse:not(.show) {right: 100%;display: block;opacity: 0;left: 0%;transition: all ease-in-out 0.3s;padding: 0;}
+    .header .navbar .navbar-collapse {background-image: url("https://res.cloudinary.com/arhamsoft-ltd/image/upload/v1737446453/assessment-frontend/movies-bg_yrbmxz.webp");z-index: 99;position: fixed;top: 0%;padding: 40px 5%;height: 100vh;right: 0%;opacity: 1;left: 0;transition: all ease-in-out 0.3s;border-top: 4px solid #0E6EFD;background-repeat: no-repeat;background-size: cover;background-position: center;}
+    .header .navbar .navbar-collapse::before {content:"";position: absolute;background-color: rgba(0, 0, 0, 0.6);top:0;left: 0;right: 0;bottom: 0;z-index:1;}
+    .header .navbar .navbar-nav {margin-left: 30px;}
+    .header .navbar .nav-link:not(:last-of-type) {margin-right: 0px;}
+    .header .navbar .login-buttons ul li:not(:last-of-type){margin-right: 15px;}
+    .header .navbar .nav-link:not(:last-of-type) {margin-bottom: 30px;}
+    .header .navbar .navbar-brand {margin-right: 47px;}
+    .header .navbar .navbar-toggler {margin-left: 15px;}
+    .header .navbar {z-index: 3;}
+    .header .navbar .navbar-nav {position: relative;z-index: 2;}
+    .header .navbar-collapse .nav-link .image {display: block;}
+    .header .navbar .navbar-brand.nav-collapse-logo {position: relative;z-index: 2;margin-right: 0px;margin-bottom: 30px;display: inline-block;}
+    .header .navbar-collapse .close-button {z-index: 2;padding: 0;border: none;background: transparent;color: #fff;position: absolute;right: 20px;top: 20px;font-size: 30px;cursor: pointer;display: inline-block;}
+}
+@media only screen and (max-width:767px){
+    .header .navbar .navbar-brand {font-size: 30px;}
+}
+@media only screen and (max-width:479px){
+    .header .navbar .navbar-brand {font-size: 26px;line-height: 34px;margin-right: 15px;}
+    .header .navbar .login-buttons ul li:not(:last-of-type) {margin-right: 10px;}
+    .header .navbar .navbar-toggler {margin-left: 10px;}
+    .header .navbar .round {width: 30px;height: 30px;font-size: 16px;min-height: auto;}
+    .header .navbar .login-buttons .white-button .text{display: none;}
+    .header .navbar .login-buttons .white-button .image{display: block;}
+    .header .navbar .login-buttons .create-button {width: 30px;height: 30px;font-size: 16px;min-height: auto;border-radius: 50%;}
+    .header .search-icon {display: block;}
+    .header .navbar .navbar-collapse {padding: 20px 5%;}
+    .header .navbar-collapse .close-button {font-size: 25px;}
+    .header .navbar-collapse .nav-link.mobile-links {display: inline-flex;}
+}
+@media only screen and (max-width:319px){
+    .header .navbar .navbar-brand {font-size: 26px;line-height: 34px;margin-right: 10px;}
+    .header .navbar .login-buttons ul li:not(:last-of-type) {margin-right: 8px;}
+    .header .navbar .round {width: 28px;height: 28px;font-size: 14px;}
+    .header .navbar .login-buttons .create-button {width: 28px;height: 28px;font-size: 14px;}
+    .header .navbar .navbar-toggler {margin-left: 4px;font-size: 16px;}
+    .header .navbar .navbar-brand {font-size: 24px;line-height: 32px;margin-right: 8px;}
+    .header .navbar .navbar-collapse {padding: 14px 5%;}
+    .header .navbar-collapse .close-button {right: 14px;top: 14px;font-size: 20px;width: auto;}
+}

@@ -1,0 +1,24 @@
+/*footer*/
+.footer {padding: 62px 0px 20px;text-align: center;background-color: #000000;}
+.footer p {margin: 0;font-size: 16px;line-height: 19px;color: #F6F6F6;}
+.footer .container {width: auto;}
+.footer form {padding: 29px 0px 61px;}
+.footer form .input-group {justify-content: center;}
+.footer form input {background: #161921 0% 0% no-repeat padding-box;border: 1px solid #343945;padding: 19px 16px;max-width: 433px;font-size: 16px;line-height: 19px;font-weight: normal;color: #F6F6F6;margin-right: 8px;border-radius: 5px !important;}
+.footer form input:focus {background: #161921 0% 0% no-repeat padding-box;border: 1px solid #343945;color: #F6F6F6;box-shadow: none;}
+.footer form input::placeholder {color: #909090;}
+.footer form button {background-color: #FEC501;border: 1px solid #FEC501;border-radius: 5px !important;font-size: 16px;line-height: 19px;font-weight: 600;color: #000;min-width: 141px;}
+.footer form button:hover {border: 1px solid #FEC501;background-color: #000;color: #FEC501;}
+/* responsive */
+@media only screen and (max-width:991px){
+    .footer {padding: 40px 0px 30px;text-align: center;}
+    .footer p {font-size: 14px;line-height: 18px;}
+}
+@media only screen and (max-width:767px){
+    .footer form input {max-width: 350px;}
+}
+@media only screen and (max-width:479px){
+    .footer p {font-size: 12px;line-height: 16px;} 
+    .footer form .input-group {flex-direction: column;}
+    .footer form input {max-width: 100%;width: 100% !important;margin-bottom: 10px;margin-right: 0px;    padding: 19px 12px;font-size: 14px;line-height: 17px;}
+}

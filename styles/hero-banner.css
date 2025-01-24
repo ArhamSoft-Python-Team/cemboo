@@ -1,0 +1,76 @@
+/*page banner*/
+.hero-banner {background-repeat: no-repeat;background-size: 100% 100%;position: relative;padding: 217px 0px 142px;box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);}
+.hero-banner .container {width: auto;}
+.hero-banner h1 {font-size: 56px;line-height: 70px;margin-bottom: 17px;font-family: var(--font-unbounded), sans-serif;font-weight: 900;}
+.hero-banner .hero-content {position: relative;max-width: 800px;margin-left: 160px;}
+.hero-banner .hero-content p {margin-bottom: 0;max-width: 569px;font-size: 24px;line-height: 34px;display: block;display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 2;line-clamp: 2;}
+.hero-banner .hero-content .movie-link {font-size: 24px;line-height: 30px;text-decoration: none;color: #FEC501;margin-bottom: 53px;display: inline-block;}
+.hero-banner .hero-content .movie-link svg {width: 15px;margin-left: 10px;}
+.hero-banner .hero-content .movie-link:hover {color: #0c9bff;}
+.hero-banner .hero-area {display: flex;align-items: center;}
+.hero-banner .banner-buttons {display: flex;align-items: center;}
+.hero-banner .banner-buttons button:not(:last-of-type) {margin-right: 15px;}
+.hero-banner .banner-buttons button, .hero-banner .banner-buttons .btn {font-size: 24px;line-height: 29px;padding: 0.938rem 1.876rem;}
+/*hero-navbar*/
+.hero-banner .hero-navbar ul {margin: 0;padding: 0;list-style: none;}
+.hero-banner .hero-navbar ul li:not(:last-of-type) {margin-bottom: 50px;}
+.hero-banner .hero-navbar ul li img {opacity: 0.6;}
+.hero-banner .hero-navbar ul li:hover img{opacity: 1;}
+/* responsive */
+@media only screen and (max-width:1799px){
+    .hero-banner h1 {font-size: 50px;line-height: 65px;margin-bottom: 15px;}
+    .hero-banner .hero-content p {font-size: 22px;line-height: 32px;}
+}
+@media only screen and (max-width:1599px){
+    .hero-banner {padding: 180px 0px 105px;}
+    .hero-banner .hero-content {margin-left: 110px;}
+    .hero-banner .hero-content .movie-link {font-size: 22px;line-height: 28px;}
+}
+@media only screen and (max-width:1399px){
+    .hero-banner .hero-content {max-width: 650px;}
+    .hero-banner h1 {font-size: 40px;line-height: 50px;margin-bottom: 12px;}
+    .hero-banner .hero-content p {font-size: 20px;line-height: 30px;max-width: 470px;}
+    .hero-banner .hero-content .movie-link {font-size: 20px;line-height: 26px;margin-bottom: 40px;}
+    .hero-banner .banner-buttons button, .hero-banner .banner-buttons .btn {font-size: 20px;line-height: 25px;}
+    .hero-banner .hero-content {margin-left: 85px;}
+    .hero-banner .hero-navbar ul li:not(:last-of-type) {margin-bottom: 40px;}
+    .hero-banner {padding: 130px 0px 80px;}
+}
+@media only screen and (max-width:1199px){
+    .hero-banner .hero-content {max-width: 500px;}
+    .hero-banner .hero-content .movie-link {font-size: 20px;line-height: 28px;margin-bottom: 30px;}
+    .hero-banner .hero-content .movie-link svg {width: 12px;}
+    .hero-banner {background-position: right;background-size: cover;padding: 130px 0px 70px;}
+    .hero-banner::before {content:"";position: absolute;background-color: rgba(0, 0, 0, 0.3);top:0;left: 0;right: 0;bottom: 0;z-index: 1;}
+    .hero-banner .container {z-index: 2;position: relative;}
+    .hero-banner h1 {font-size: 35px;line-height: 45px;}
+    .hero-banner .hero-content p {font-size: 18px;line-height: 28px;max-width: 100%;}
+    .hero-banner .banner-buttons button, .hero-banner .banner-buttons .btn {font-size: 18px;line-height: 24px;}
+    .hero-banner .hero-content .movie-link {font-size: 18px;line-height: 26px;}
+    .hero-banner .hero-navbar ul li:not(:last-of-type) {margin-bottom: 35px;}
+}
+@media only screen and (max-width:991px){
+    .hero-banner h1 {font-size: 1.5rem;line-height: 2.0rem;}
+    .hero-banner .hero-content {max-width: 420px;}
+}
+@media only screen and (max-width:767px){
+    .hero-banner::before {background-color: rgba(0, 0, 0, 0.5);}
+    .hero-banner {background-position: 80% 100%;padding: 120px 0px 60px;}
+    .hero-navbar ul li img {width: 24px;height: 24px;}
+    .hero-navbar ul li:not(:last-of-type) {margin-bottom: 30px;}
+    .hero-banner .hero-content {margin-left: 50px;}
+    .hero-banner .banner-buttons button, .hero-banner .banner-buttons .btn {padding: 0.738rem 1.476rem;font-size: 16px;line-height: 22px;}
+}
+@media only screen and (max-width:575px){
+    .hero-banner .hero-content .movie-link {margin-bottom: 25px;}
+}
+@media only screen and (max-width:479px){
+    .hero-banner .hero-area {flex-direction: column;}
+    .hero-banner .hero-content {margin-left: 0px;}
+    .hero-banner .banner-buttons {flex-direction: column;}
+    .hero-banner .banner-buttons button:not(:last-of-type) {margin-right: 0px;margin-bottom: 10px;}
+    .hero-banner .banner-buttons button{width: 100%;}
+    .hero-banner {padding: 120px 0px 60px;}
+    .hero-banner .hero-navbar {display: none;}
+    .hero-banner .banner-buttons button, .hero-banner .banner-buttons .btn {padding: 0.538rem 1.076rem;font-size: 14px;line-height: 20px;}
+}

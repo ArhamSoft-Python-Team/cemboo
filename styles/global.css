@@ -1,0 +1,59 @@
+/*scroll*/
+/*html scroll*/
+html {font-size: 100%;}
+html::-webkit-scrollbar {background-color: #1a1a1a;width: 15px;}
+html::-webkit-scrollbar-button {background-color: #1a1a1a;color: #1a1a1a;}
+html::-webkit-scrollbar-track {background-color: #1a1a1a;}
+html::-webkit-scrollbar-track-piece {background-color: #1a1a1a;}
+html::-webkit-scrollbar-thumb {background: #5096FF;cursor: pointer;border-radius: 10px;}
+html::-webkit-scrollbar-corner {background-color: #1a1a1a;}
+html::-webkit-resizer {background-color: #1a1a1a;}
+html::-webkit-scrollbar-button:single-button {display: none;}
+html {scrollbar-color: #5096FF #1a1a1a;overflow-x: hidden;overflow-y: auto;}
+/*basic codes*/
+body {background-color: #0C101A;color: #fff;overflow: hidden;font-size: 20px;line-height: 30px;font-family: var(--font-lato), sans-serif;}
+.container {margin: 0 2.5%;padding: 0;max-width: none;}
+button, .btn {font-size: 16px;line-height: 19px;font-weight: bold;padding: 0.938rem;border-radius: 0.25rem;display: flex;align-items: center;justify-content: center;transition: all ease-in-out 0.3s;}
+button:hover {transition: all ease-in-out 0.3s;}
+.blue-button {background: #0c9bff;color: rgb(255, 255, 255);border: 1px solid #0c9bff;}
+.blue-button:hover {background: rgb(255, 255, 255);color: #0c9bff;border: 1px solid #0c9bff;}
+.outline-button {background: transparent;color: #fff;border: 1px solid #fff;}
+.outline-button:hover {background: #0c9bff;color: rgb(255, 255, 255);border: 1px solid #0c9bff;}
+.outline-button .small-button {width: 29px;margin-right: 16px;height: 29px;background: #fff;color: #0c9bff;border-radius: 50%;display: flex;justify-content: center;align-items: center;font-size: 16px;}
+.white-button {background: #fff;color: #000;border: 1px solid #fff;}
+.white-button:hover {background: #000;color: #fff;border: 1px solid #fff;}
+/*modal*/
+.modal-backdrop.show {opacity: 0.76;}
+.modal .modal-dialog {width: calc(100% - 1rem);max-width: 66%;}
+.modal .modal-content {background: #1a1a1a;height: 80vh;box-shadow: 0px 0px 10px #000;}
+.modal .modal-header {border: none;}
+.modal .modal-header .btn-close {background-image: url("https://res.cloudinary.com/arhamsoft-ltd/image/upload/v1737447449/assessment-frontend/cross_efp5bt.svg");}
+.modal .modal-body {padding-top: 0px;}
+.modal .modal-header .btn-close:focus {box-shadow: none;outline: 0;}
+.modal .modal-body .error-image {width: 100%;height: 100%;text-align: center;display: flex;flex-direction: column;align-items: center;justify-content: center;}
+.modal .modal-body .error-image img {margin-bottom: 20px;}
+/* responsive */
+@media only screen and (max-width:1399px){
+    .outline-button .small-button {width: 25px;height: 25px;}
+}
+@media only screen and (max-width:991px){
+    body {font-size: 16px;line-height: 24px;}
+    .modal .modal-body .error-image img {width: 200px;}
+}
+@media only screen and (max-width:767px){
+    .modal .modal-title {font-size: 18px;}
+    button, .btn {font-size: 14px;line-height: 17px;padding: 0.738rem;}
+    .modal .modal-dialog {max-width: 80%;}
+}
+@media only screen and (max-width:575px){
+    button, .btn {font-size: 14px;line-height: 18px;min-height: 2.5rem;}
+    .modal .modal-dialog {max-width: 100%;}
+    .modal .modal-body .error-image img {width: 170px;}
+}
+@media only screen and (max-width:479px){
+    .modal .modal-title {font-size: 16px;}
+    .modal .modal-header .btn-close {font-size: 14px;}
+}
+@media only screen and (max-width:319px){
+    button, .btn {width: 100%;justify-content: center;}
+}
